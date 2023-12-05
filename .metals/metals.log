@@ -446,3 +446,986 @@ Caused by: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException:
 2023.12.05 00:31:21 INFO  time: compiled scala in 2.2s
 Dec 05, 2023 12:32:02 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+Dec 05, 2023 12:58:11 AM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2023.12.05 00:58:11 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+Dec 05, 2023 12:58:11 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_00-58-11-532.md
+2023.12.05 00:59:32 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 00:59:32 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 12:59:39 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:747)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2218)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:469)
+	at scala.meta.internal.metals.debug.DebugProvider.runCommandDiscovery(DebugProvider.scala:419)
+	at scala.meta.internal.metals.MetalsLspService.discoverMainClasses(MetalsLspService.scala:1730)
+	at scala.meta.internal.metals.WorkspaceLspService.executeCommand(WorkspaceLspService.scala:690)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+2023.12.05 00:59:52 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 00:59:52 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 12:59:54 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:747)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2218)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:469)
+	at scala.meta.internal.metals.debug.DebugProvider.runCommandDiscovery(DebugProvider.scala:419)
+	at scala.meta.internal.metals.MetalsLspService.discoverMainClasses(MetalsLspService.scala:1730)
+	at scala.meta.internal.metals.WorkspaceLspService.executeCommand(WorkspaceLspService.scala:690)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+Dec 05, 2023 12:59:57 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 66
+2023.12.05 01:00:31 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:00:31 INFO  skipping build import with status 'Failed'
+2023.12.05 01:00:34 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:00:34 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:00:55 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-00-55-565.md
+2023.12.05 01:00:56 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:00:56 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:00:56 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-00-56-262.md
+Dec 05, 2023 1:01:02 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-01-02-033.md
+Dec 05, 2023 1:01:02 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-01-02-844.md
+2023.12.05 01:01:03 INFO  skipping build import with status 'Failed'
+2023.12.05 01:01:03 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+Dec 05, 2023 1:01:03 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-01-03-569.md
+Dec 05, 2023 1:01:04 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-01-04-870.md
+2023.12.05 01:01:05 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:01:05 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:01:05 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-01-05-523.md
+2023.12.05 01:01:10 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:01:10 INFO  skipping build import with status 'Failed'
+2023.12.05 01:01:14 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:01:14 INFO  skipping build import with status 'Failed'
+2023.12.05 01:01:16 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:01:16 INFO  skipping build import with status 'Failed'
+2023.12.05 01:01:19 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:01:19 INFO  skipping build import with status 'Failed'
+2023.12.05 01:01:23 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:01:23 INFO  skipping build import with status 'Failed'
+2023.12.05 01:01:27 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:01:27 INFO  skipping build import with status 'Failed'
+2023.12.05 01:01:30 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:01:30 INFO  skipping build import with status 'Failed'
+2023.12.05 01:01:45 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:01:45 INFO  skipping build import with status 'Failed'
+2023.12.05 01:01:47 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:01:47 INFO  skipping build import with status 'Failed'
+2023.12.05 01:01:52 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:01:52 INFO  skipping build import with status 'Failed'
+2023.12.05 01:01:56 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:01:56 INFO  skipping build import with status 'Failed'
+2023.12.05 01:02:13 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:02:13 INFO  skipping build import with status 'Failed'
+2023.12.05 01:02:18 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:02:18 INFO  skipping build import with status 'Failed'
+2023.12.05 01:02:22 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:02:22 INFO  skipping build import with status 'Failed'
+2023.12.05 01:02:25 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:02:25 INFO  skipping build import with status 'Failed'
+2023.12.05 01:02:31 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:02:31 INFO  skipping build import with status 'Failed'
+2023.12.05 01:02:37 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:02:37 INFO  skipping build import with status 'Failed'
+2023.12.05 01:03:14 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:03:14 INFO  skipping build import with status 'Failed'
+2023.12.05 01:04:12 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:04:12 INFO  skipping build import with status 'Failed'
+2023.12.05 01:05:24 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:05:24 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:05:26 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-05-26-676.md
+2023.12.05 01:05:27 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:05:27 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:05:27 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-05-27-357.md
+Dec 05, 2023 1:05:29 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-05-29-395.md
+2023.12.05 01:05:30 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:05:30 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:05:30 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-05-30-090.md
+Dec 05, 2023 1:05:30 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-05-30-561.md
+2023.12.05 01:05:31 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:05:31 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:05:31 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-05-31-243.md
+Dec 05, 2023 1:05:31 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-05-31-626.md
+Dec 05, 2023 1:05:32 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-05-32-073.md
+Dec 05, 2023 1:05:33 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-05-33-031.md
+2023.12.05 01:05:33 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:05:33 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:05:33 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-05-33-739.md
+Dec 05, 2023 1:05:34 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-05-34-288.md
+2023.12.05 01:05:34 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:05:34 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:05:34 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-05-34-952.md
+Dec 05, 2023 1:05:35 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-05-35-976.md
+Dec 05, 2023 1:05:36 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-05-36-806.md
+2023.12.05 01:05:37 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:05:37 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:05:37 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-05-37-460.md
+Dec 05, 2023 1:05:41 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-05-41-003.md
+2023.12.05 01:05:41 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:05:41 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:05:41 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-05-41-706.md
+Dec 05, 2023 1:05:45 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-05-45-895.md
+2023.12.05 01:05:46 INFO  skipping build import with status 'Failed'
+2023.12.05 01:05:46 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+Dec 05, 2023 1:05:46 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-05-46-554.md
+Dec 05, 2023 1:05:47 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-05-47-834.md
+2023.12.05 01:05:48 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:05:48 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:05:48 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-05-48-501.md
+Dec 05, 2023 1:06:01 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-06-01-203.md
+2023.12.05 01:06:01 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:06:01 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:06:01 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-06-01-875.md
+2023.12.05 01:06:07 INFO  skipping build import with status 'Failed'
+2023.12.05 01:06:07 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:06:14 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:06:14 INFO  skipping build import with status 'Failed'
+2023.12.05 01:06:16 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:06:16 INFO  skipping build import with status 'Failed'
+2023.12.05 01:06:17 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:06:17 INFO  skipping build import with status 'Failed'
+2023.12.05 01:06:20 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:06:20 INFO  skipping build import with status 'Failed'
+2023.12.05 01:06:23 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:06:23 INFO  skipping build import with status 'Failed'
+2023.12.05 01:06:25 INFO  skipping build import with status 'Failed'
+2023.12.05 01:06:25 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:06:27 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:06:27 INFO  skipping build import with status 'Failed'
+2023.12.05 01:06:43 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:06:43 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:06:47 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-06-47-360.md
+2023.12.05 01:06:48 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:06:48 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:06:48 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-06-48-056.md
+2023.12.05 01:06:49 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:06:49 INFO  skipping build import with status 'Failed'
+2023.12.05 01:07:01 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:07:01 INFO  skipping build import with status 'Failed'
+2023.12.05 01:07:04 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:07:04 INFO  skipping build import with status 'Failed'
+2023.12.05 01:07:07 INFO  skipping build import with status 'Failed'
+2023.12.05 01:07:07 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:07:12 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:07:12 INFO  skipping build import with status 'Failed'
+2023.12.05 01:08:02 INFO  skipping build import with status 'Failed'
+2023.12.05 01:08:02 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:08:05 INFO  skipping build import with status 'Failed'
+2023.12.05 01:08:05 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+Dec 05, 2023 1:08:08 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-08-08-658.md
+2023.12.05 01:08:09 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:08:09 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:08:09 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-08-09-338.md
+Dec 05, 2023 1:08:10 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-08-10-223.md
+Dec 05, 2023 1:08:11 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-08-11-011.md
+2023.12.05 01:08:11 INFO  skipping build import with status 'Failed'
+2023.12.05 01:08:11 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+Dec 05, 2023 1:08:11 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-08-11-723.md
+Dec 05, 2023 1:08:12 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-08-12-357.md
+Dec 05, 2023 1:08:13 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-08-13-679.md
+Dec 05, 2023 1:08:14 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-08-14-605.md
+Dec 05, 2023 1:08:15 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-08-15-610.md
+Dec 05, 2023 1:08:16 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-08-16-211.md
+Dec 05, 2023 1:08:17 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-08-17-174.md
+2023.12.05 01:08:17 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:08:17 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:08:17 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-08-17-885.md
+Dec 05, 2023 1:08:20 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-08-20-800.md
+2023.12.05 01:08:21 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:08:21 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:08:21 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-08-21-467.md
+Dec 05, 2023 1:08:22 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-08-22-575.md
+2023.12.05 01:08:23 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:08:23 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-08-23-246.md
+2023.12.05 01:08:23 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+Dec 05, 2023 1:08:25 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-08-25-417.md
+2023.12.05 01:08:26 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:08:26 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:08:26 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-08-26-104.md
+Dec 05, 2023 1:08:27 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-08-27-699.md
+Dec 05, 2023 1:08:28 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-08-28-261.md
+Dec 05, 2023 1:08:29 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-08-29-268.md
+2023.12.05 01:08:29 INFO  skipping build import with status 'Failed'
+2023.12.05 01:08:29 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+Dec 05, 2023 1:08:29 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-08-29-970.md
+2023.12.05 01:09:05 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:09:05 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:09:09 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-09-09-082.md
+2023.12.05 01:09:09 INFO  skipping build import with status 'Failed'
+2023.12.05 01:09:09 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+Dec 05, 2023 1:09:09 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-09-09-743.md
+Dec 05, 2023 1:09:10 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-09-10-300.md
+2023.12.05 01:09:10 INFO  skipping build import with status 'Failed'
+2023.12.05 01:09:10 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+Dec 05, 2023 1:09:11 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-09-11-008.md
+2023.12.05 01:09:16 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:09:16 INFO  skipping build import with status 'Failed'
+2023.12.05 01:09:18 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:09:18 INFO  skipping build import with status 'Failed'
+2023.12.05 01:09:20 INFO  skipping build import with status 'Failed'
+2023.12.05 01:09:20 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:09:24 INFO  skipping build import with status 'Failed'
+2023.12.05 01:09:24 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+Dec 05, 2023 1:09:26 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-09-26-511.md
+2023.12.05 01:09:27 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:09:27 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:09:27 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-09-27-165.md
+Dec 05, 2023 1:09:28 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-09-28-615.md
+Dec 05, 2023 1:09:29 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-09-29-178.md
+2023.12.05 01:09:29 INFO  skipping build import with status 'Failed'
+2023.12.05 01:09:29 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+Dec 05, 2023 1:09:29 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-09-29-876.md
+Dec 05, 2023 1:09:36 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-09-36-536.md
+2023.12.05 01:09:37 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:09:37 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:09:37 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-09-37-262.md
+Dec 05, 2023 1:09:39 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-09-39-427.md
+Dec 05, 2023 1:09:40 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-09-40-110.md
+Dec 05, 2023 1:09:40 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-09-40-672.md
+Dec 05, 2023 1:09:41 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-09-41-639.md
+2023.12.05 01:09:43 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:09:43 INFO  skipping build import with status 'Failed'
+2023.12.05 01:09:45 INFO  skipping build import with status 'Failed'
+2023.12.05 01:09:45 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:09:52 INFO  skipping build import with status 'Failed'
+2023.12.05 01:09:52 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+Dec 05, 2023 1:09:57 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-09-57-963.md
+2023.12.05 01:09:58 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:09:58 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:09:58 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-09-58-637.md
+Dec 05, 2023 1:09:59 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-09-59-720.md
+2023.12.05 01:10:01 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:10:01 INFO  skipping build import with status 'Failed'
+2023.12.05 01:10:02 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:10:02 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:10:06 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-10-06-645.md
+2023.12.05 01:10:07 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:10:07 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:10:11 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-10-11-017.md
+Dec 05, 2023 1:10:11 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-10-11-907.md
+2023.12.05 01:10:12 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:10:12 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:10:12 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-10-12-583.md
+2023.12.05 01:10:14 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:10:14 INFO  skipping build import with status 'Failed'
+2023.12.05 01:10:16 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:10:16 INFO  skipping build import with status 'Failed'
+2023.12.05 01:10:18 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:10:18 INFO  skipping build import with status 'Failed'
+2023.12.05 01:10:22 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:10:22 INFO  skipping build import with status 'Failed'
+2023.12.05 01:10:28 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:10:28 INFO  skipping build import with status 'Failed'
+2023.12.05 01:10:58 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:10:58 INFO  skipping build import with status 'Failed'
+2023.12.05 01:11:00 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:11:00 INFO  skipping build import with status 'Failed'
+2023.12.05 01:11:03 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:11:03 INFO  skipping build import with status 'Failed'
+2023.12.05 01:11:28 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:11:28 INFO  skipping build import with status 'Failed'
+2023.12.05 01:11:35 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:11:35 INFO  skipping build import with status 'Failed'
+2023.12.05 01:11:43 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:11:43 INFO  skipping build import with status 'Failed'
+2023.12.05 01:11:46 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:11:46 INFO  skipping build import with status 'Failed'
+2023.12.05 01:12:02 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:12:02 INFO  skipping build import with status 'Failed'
+2023.12.05 01:12:04 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:12:04 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:12:06 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-12-06-418.md
+2023.12.05 01:12:07 INFO  skipping build import with status 'Failed'
+2023.12.05 01:12:07 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+Dec 05, 2023 1:12:07 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-12-07-099.md
+Dec 05, 2023 1:12:14 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-12-14-145.md
+Dec 05, 2023 1:12:14 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-12-14-798.md
+Dec 05, 2023 1:12:16 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-12-16-249.md
+2023.12.05 01:12:16 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:12:16 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:12:16 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-12-16-925.md
+Dec 05, 2023 1:12:18 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-12-18-643.md
+2023.12.05 01:12:19 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:12:19 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:12:19 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-12-19-327.md
+2023.12.05 01:12:20 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:12:20 INFO  skipping build import with status 'Failed'
+2023.12.05 01:12:22 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:12:22 INFO  skipping build import with status 'Failed'
+2023.12.05 01:12:23 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:12:23 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:12:35 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-12-35-354.md
+Dec 05, 2023 1:12:36 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-12-36-839.md
+2023.12.05 01:12:37 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:12:37 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:12:37 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-12-37-500.md
+Dec 05, 2023 1:12:38 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-12-38-410.md
+Dec 05, 2023 1:12:38 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-12-38-849.md
+2023.12.05 01:12:39 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:12:39 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:12:39 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-12-39-506.md
+Dec 05, 2023 1:12:42 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-12-42-361.md
+2023.12.05 01:12:43 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:12:43 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:12:43 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-12-43-073.md
+Dec 05, 2023 1:12:43 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-12-43-446.md
+Dec 05, 2023 1:12:44 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-12-44-369.md
+2023.12.05 01:12:45 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:12:45 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:12:45 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-12-45-069.md
+Dec 05, 2023 1:12:46 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-12-46-720.md
+2023.12.05 01:12:47 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:12:47 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:12:47 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-12-47-385.md
+2023.12.05 01:12:52 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:12:52 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:12:56 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-12-56-613.md
+2023.12.05 01:12:57 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:12:57 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:12:57 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-12-57-294.md
+2023.12.05 01:13:01 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:13:01 INFO  skipping build import with status 'Failed'
+2023.12.05 01:13:03 INFO  skipping build import with status 'Failed'
+2023.12.05 01:13:03 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+Dec 05, 2023 1:13:06 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-13-06-981.md
+2023.12.05 01:13:08 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:13:08 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:13:12 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-13-12-733.md
+2023.12.05 01:13:12 ERROR Failed to tokenize input for semantic tokens for C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+scala.meta.tokenizers.TokenizeException: <input>:43: error: unclosed character literal
+            ''
+            ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchSingleQuote$1(LegacyScanner.scala:407)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:412)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:539)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1589)
+
+2023.12.05 01:13:13 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:13:13 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:13:13 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-13-13-376.md
+2023.12.05 01:13:13 ERROR Failed to tokenize input for semantic tokens for C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+scala.meta.tokenizers.TokenizeException: <input>:43: error: unclosed character literal
+            ''
+            ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchSingleQuote$1(LegacyScanner.scala:407)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:412)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:539)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1589)
+
+2023.12.05 01:13:16 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:13:16 INFO  skipping build import with status 'Failed'
+2023.12.05 01:13:18 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:13:18 INFO  skipping build import with status 'Failed'
+2023.12.05 01:13:22 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:13:22 INFO  skipping build import with status 'Failed'
+2023.12.05 01:13:24 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:13:24 INFO  skipping build import with status 'Failed'
+2023.12.05 01:13:36 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:13:36 INFO  skipping build import with status 'Failed'
+2023.12.05 01:13:48 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:13:48 INFO  skipping build import with status 'Failed'
+2023.12.05 01:13:59 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:13:59 INFO  skipping build import with status 'Failed'
+2023.12.05 01:14:14 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:14:14 INFO  skipping build import with status 'Failed'
+2023.12.05 01:14:17 INFO  skipping build import with status 'Failed'
+2023.12.05 01:14:17 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:14:23 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:14:23 INFO  skipping build import with status 'Failed'
+2023.12.05 01:14:38 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:14:38 INFO  skipping build import with status 'Failed'
+2023.12.05 01:15:28 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:15:28 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:15:29 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-15-29-276.md
+2023.12.05 01:15:29 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:15:29 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:15:29 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-15-29-996.md
+2023.12.05 01:15:33 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:15:33 INFO  skipping build import with status 'Failed'
+2023.12.05 01:15:36 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:15:36 INFO  skipping build import with status 'Failed'
+2023.12.05 01:15:37 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:15:37 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:15:38 AM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Dec 05, 2023 1:15:38 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-15-38-463.md
+2023.12.05 01:15:39 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:15:39 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:15:47 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-15-47-862.md
+Dec 05, 2023 1:15:48 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-15-48-680.md
+2023.12.05 01:15:49 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:15:49 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:15:49 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-15-49-343.md
+2023.12.05 01:15:52 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:15:52 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:15:53 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-15-53-689.md
+Dec 05, 2023 1:15:54 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-15-54-236.md
+2023.12.05 01:15:54 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:15:54 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:15:54 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-15-54-903.md
+Dec 05, 2023 1:15:56 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-15-56-508.md
+2023.12.05 01:15:57 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:15:57 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:15:57 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-15-57-165.md
+2023.12.05 01:15:59 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:15:59 INFO  skipping build import with status 'Failed'
+2023.12.05 01:16:01 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:16:01 INFO  skipping build import with status 'Failed'
+2023.12.05 01:16:05 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:16:05 INFO  skipping build import with status 'Failed'
+2023.12.05 01:16:12 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:16:12 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:16:23 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-16-23-267.md
+2023.12.05 01:16:23 INFO  skipping build import with status 'Failed'
+2023.12.05 01:16:23 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+Dec 05, 2023 1:16:23 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-16-23-930.md
+2023.12.05 01:16:26 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:16:26 INFO  skipping build import with status 'Failed'
+2023.12.05 01:16:28 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:16:28 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:16:31 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-16-31-234.md
+2023.12.05 01:16:31 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:16:31 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:16:31 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-16-31-902.md
+2023.12.05 01:16:43 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:16:43 INFO  skipping build import with status 'Failed'
+2023.12.05 01:16:45 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:16:45 INFO  skipping build import with status 'Failed'
+2023.12.05 01:16:47 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:16:47 INFO  skipping build import with status 'Failed'
+2023.12.05 01:16:49 INFO  skipping build import with status 'Failed'
+2023.12.05 01:16:49 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:16:55 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:16:55 INFO  skipping build import with status 'Failed'
+2023.12.05 01:17:11 INFO  skipping build import with status 'Failed'
+2023.12.05 01:17:11 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:17:14 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:17:14 INFO  skipping build import with status 'Failed'
+2023.12.05 01:17:17 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:17:17 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:17:18 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-17-18-364.md
+2023.12.05 01:17:19 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:17:19 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:17:19 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-17-19-018.md
+2023.12.05 01:17:21 INFO  skipping build import with status 'Failed'
+2023.12.05 01:17:21 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:17:27 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:17:27 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:17:30 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-17-30-339.md
+2023.12.05 01:17:30 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:17:30 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:17:30 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-17-30-982.md
+Dec 05, 2023 1:17:31 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-17-31-883.md
+2023.12.05 01:17:33 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:17:33 INFO  skipping build import with status 'Failed'
+2023.12.05 01:17:36 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:17:36 INFO  skipping build import with status 'Failed'
+2023.12.05 01:17:39 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:17:39 INFO  skipping build import with status 'Failed'
+2023.12.05 01:19:47 INFO  skipping build import with status 'Failed'
+2023.12.05 01:19:47 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:19:49 INFO  skipping build import with status 'Failed'
+2023.12.05 01:19:49 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+Dec 05, 2023 1:19:50 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-19-50-470.md
+2023.12.05 01:19:51 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:19:51 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:19:51 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-19-51-144.md
+2023.12.05 01:19:54 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:19:54 INFO  skipping build import with status 'Failed'
+2023.12.05 01:19:56 INFO  skipping build import with status 'Failed'
+2023.12.05 01:19:56 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+Dec 05, 2023 1:20:02 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-20-02-561.md
+2023.12.05 01:20:03 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:20:03 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:20:03 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-20-03-229.md
+2023.12.05 01:20:05 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:20:05 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:20:06 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-20-06-181.md
+2023.12.05 01:20:09 INFO  skipping build import with status 'Failed'
+2023.12.05 01:20:09 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+Dec 05, 2023 1:20:10 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-20-10-358.md
+2023.12.05 01:20:11 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:20:11 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:20:11 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-20-11-031.md
+2023.12.05 01:20:13 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:20:13 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:20:14 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-20-14-058.md
+2023.12.05 01:20:14 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:20:14 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:20:14 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-20-14-684.md
+2023.12.05 01:20:15 INFO  skipping build import with status 'Failed'
+2023.12.05 01:20:15 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:20:17 INFO  skipping build import with status 'Failed'
+2023.12.05 01:20:17 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:20:19 INFO  skipping build import with status 'Failed'
+2023.12.05 01:20:19 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+Dec 05, 2023 1:20:36 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-20-36-223.md
+Dec 05, 2023 1:20:36 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-20-36-797.md
+2023.12.05 01:20:37 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:20:37 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:20:37 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-20-37-482.md
+Dec 05, 2023 1:20:38 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-20-38-154.md
+Dec 05, 2023 1:20:39 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-20-39-130.md
+2023.12.05 01:20:39 INFO  skipping build import with status 'Failed'
+2023.12.05 01:20:39 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+Dec 05, 2023 1:20:39 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-20-39-818.md
+2023.12.05 01:20:42 INFO  skipping build import with status 'Failed'
+2023.12.05 01:20:42 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:20:48 INFO  skipping build import with status 'Failed'
+2023.12.05 01:20:48 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:20:50 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:20:50 INFO  skipping build import with status 'Failed'
+2023.12.05 01:20:54 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:20:54 INFO  skipping build import with status 'Failed'
+2023.12.05 01:20:55 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:20:55 INFO  skipping build import with status 'Failed'
+2023.12.05 01:20:56 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:20:56 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:20:57 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-20-57-700.md
+Dec 05, 2023 1:20:58 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-20-58-426.md
+Dec 05, 2023 1:20:59 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-20-59-177.md
+2023.12.05 01:21:00 INFO  skipping build import with status 'Failed'
+2023.12.05 01:21:00 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:21:02 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:21:02 INFO  skipping build import with status 'Failed'
+2023.12.05 01:21:07 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:21:07 INFO  skipping build import with status 'Failed'
+2023.12.05 01:21:09 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:21:09 INFO  skipping build import with status 'Failed'
+2023.12.05 01:21:14 INFO  skipping build import with status 'Failed'
+2023.12.05 01:21:14 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:21:23 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:21:23 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:21:23 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-21-23-600.md
+2023.12.05 01:21:24 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:21:24 INFO  skipping build import with status 'Failed'
+2023.12.05 01:21:28 INFO  skipping build import with status 'Failed'
+2023.12.05 01:21:28 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:21:32 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:21:32 INFO  skipping build import with status 'Failed'
+2023.12.05 01:21:33 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:21:33 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:22:56 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-22-56-740.md
+Dec 05, 2023 1:22:57 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-22-57-954.md
+2023.12.05 01:22:58 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:22:58 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:22:58 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-22-58-637.md
+2023.12.05 01:23:01 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:23:01 INFO  skipping build import with status 'Failed'
+2023.12.05 01:23:07 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:23:07 INFO  skipping build import with status 'Failed'
+2023.12.05 01:23:10 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:23:10 INFO  skipping build import with status 'Failed'
+2023.12.05 01:26:05 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:26:05 INFO  skipping build import with status 'Failed'
+2023.12.05 01:26:06 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:26:06 INFO  skipping build import with status 'Failed'
+2023.12.05 01:26:10 INFO  skipping build import with status 'Failed'
+2023.12.05 01:26:10 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:26:14 INFO  skipping build import with status 'Failed'
+2023.12.05 01:26:14 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+Dec 05, 2023 1:26:16 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2463
+2023.12.05 01:26:18 INFO  skipping build import with status 'Failed'
+2023.12.05 01:26:18 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:26:22 INFO  skipping build import with status 'Failed'
+2023.12.05 01:26:22 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+Dec 05, 2023 1:26:25 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2501
+2023.12.05 01:26:31 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:26:31 INFO  skipping build import with status 'Failed'
+2023.12.05 01:26:33 INFO  skipping build import with status 'Failed'
+2023.12.05 01:26:33 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:26:35 INFO  skipping build import with status 'Failed'
+2023.12.05 01:26:35 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:26:42 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:26:42 INFO  skipping build import with status 'Failed'
+2023.12.05 01:26:44 INFO  skipping build import with status 'Failed'
+2023.12.05 01:26:44 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:26:55 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:26:55 INFO  skipping build import with status 'Failed'
+2023.12.05 01:28:37 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:28:37 INFO  skipping build import with status 'Failed'
+2023.12.05 01:28:58 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:28:58 INFO  skipping build import with status 'Failed'
+2023.12.05 01:29:50 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:29:50 INFO  skipping build import with status 'Failed'
+2023.12.05 01:29:54 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:29:54 INFO  skipping build import with status 'Failed'
+2023.12.05 01:30:01 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:30:01 INFO  skipping build import with status 'Failed'
+2023.12.05 01:30:03 INFO  skipping build import with status 'Failed'
+2023.12.05 01:30:03 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:30:05 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:30:05 INFO  skipping build import with status 'Failed'
+2023.12.05 01:30:06 INFO  skipping build import with status 'Failed'
+2023.12.05 01:30:06 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+Dec 05, 2023 1:30:11 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:747)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2218)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:469)
+	at scala.meta.internal.metals.debug.DebugProvider.runCommandDiscovery(DebugProvider.scala:419)
+	at scala.meta.internal.metals.MetalsLspService.discoverMainClasses(MetalsLspService.scala:1730)
+	at scala.meta.internal.metals.WorkspaceLspService.executeCommand(WorkspaceLspService.scala:690)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+2023.12.05 01:30:22 INFO  skipping build import with status 'Failed'
+2023.12.05 01:30:22 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+Dec 05, 2023 1:30:23 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-30-23-872.md
+2023.12.05 01:30:24 INFO  skipping build import with status 'Failed'
+2023.12.05 01:30:24 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+Dec 05, 2023 1:30:24 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-30-24-537.md
+2023.12.05 01:30:25 INFO  skipping build import with status 'Failed'
+2023.12.05 01:30:25 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+Dec 05, 2023 1:30:59 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-30-59-915.md
+Dec 05, 2023 1:31:00 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-31-00-302.md
+2023.12.05 01:31:01 INFO  skipping build import with status 'Failed'
+2023.12.05 01:31:01 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+Dec 05, 2023 1:31:05 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-31-05-008.md
+2023.12.05 01:31:05 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:31:05 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-31-05-665.md
+2023.12.05 01:31:05 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:31:11 INFO  skipping build import with status 'Failed'
+2023.12.05 01:31:11 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+Dec 05, 2023 1:31:14 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2957
+Dec 05, 2023 1:31:14 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-31-14-943.md
+2023.12.05 01:31:15 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:31:15 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:31:15 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-31-15-593.md
+2023.12.05 01:31:20 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:31:20 INFO  skipping build import with status 'Failed'
+2023.12.05 01:31:22 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:31:22 INFO  skipping build import with status 'Failed'
+2023.12.05 01:31:27 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:31:27 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:31:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:747)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2218)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:469)
+	at scala.meta.internal.metals.debug.DebugProvider.runCommandDiscovery(DebugProvider.scala:419)
+	at scala.meta.internal.metals.MetalsLspService.discoverMainClasses(MetalsLspService.scala:1730)
+	at scala.meta.internal.metals.WorkspaceLspService.executeCommand(WorkspaceLspService.scala:690)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+Dec 05, 2023 1:31:41 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.reports\metals-full\2023-12-05\r_compiler-error_01-31-41-012.md
+2023.12.05 01:31:42 INFO  skipping build import with status 'Failed'
+2023.12.05 01:31:42 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:31:43 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+2023.12.05 01:31:43 INFO  skipping build import with status 'Failed'
+Dec 05, 2023 1:31:45 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:747)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2218)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\basics.scala
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:469)
+	at scala.meta.internal.metals.debug.DebugProvider.runCommandDiscovery(DebugProvider.scala:419)
+	at scala.meta.internal.metals.MetalsLspService.discoverMainClasses(MetalsLspService.scala:1730)
+	at scala.meta.internal.metals.WorkspaceLspService.executeCommand(WorkspaceLspService.scala:690)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+2023.12.05 01:33:14 INFO  Shutting down server
+2023.12.05 01:33:14 INFO  shutting down Metals
+2023.12.05 01:33:14 INFO  Shut down connection with build server.
+2023.12.05 01:33:14 INFO  Shut down connection with build server.
+2023.12.05 01:33:14 INFO  Exiting server
