@@ -1,0 +1,363 @@
+2023.12.04 23:02:11 INFO  Started: Metals version 1.1.0 in folders 'C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala' for client Visual Studio Code 1.84.2.
+2023.12.04 23:02:12 WARN  Build server is not auto-connectable.
+2023.12.04 23:02:12 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\main.scala
+2023.12.04 23:02:12 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\build.sbt
+2023.12.04 23:02:17 INFO  no build target found for C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\build.sbt. Using presentation compiler with project's scala-library version: 3.3.1
+2023.12.04 23:02:17 INFO  running 'C:\Users\susta\Java\jdk-19.0.2\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -Dsbt.version=1.9.6 -jar C:\Users\susta\AppData\Local\Temp\metals7533974639415832846\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2023.12.04 23:02:18 ERROR [info] [launcher] getting org.scala-sbt sbt 1.9.6  (this may take some time)...
+2023.12.04 23:02:24 ERROR [info] [launcher] getting Scala 2.12.18 (for sbt)...
+2023.12.04 23:02:27 INFO  [info] Updated file C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\project\build.properties: set sbt.version to 1.9.6
+2023.12.04 23:02:27 INFO  [info] welcome to sbt 1.9.6 (Oracle Corporation Java 19.0.2)
+2023.12.04 23:02:29 INFO  [info] loading settings for project scala-build-build from metals.sbt ...
+2023.12.04 23:02:29 INFO  [info] loading project definition from C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\project\project
+2023.12.04 23:02:33 INFO  [info] loading settings for project scala-build from metals.sbt ...
+2023.12.04 23:02:33 INFO  [info] loading project definition from C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\project
+Dec 04, 2023 11:02:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+2023.12.04 23:02:39 INFO  [success] Generated .bloop\scala-build.json
+2023.12.04 23:02:39 INFO  [success] Total time: 6 s, completed Dec 4, 2023, 11:02:40 PM
+2023.12.04 23:02:42 INFO  [info] loading settings for project scala from build.sbt ...
+2023.12.04 23:02:42 INFO  [info] set current project to scala (in build file:/C:/Users/susta/OneDrive/Desktop/CS/Organization%20of%20Programming%20Languages/scala/)
+2023.12.04 23:02:45 INFO  [success] Generated .bloop\scala.json
+2023.12.04 23:02:45 INFO  [success] Generated .bloop\scala-test.json
+2023.12.04 23:02:45 INFO  [success] Total time: 3 s, completed Dec 4, 2023, 11:02:45 PM
+2023.12.04 23:02:45 INFO  time: ran 'sbt bloopInstall' in 27s
+2023.12.04 23:02:45 INFO  Attempting to connect to the build server...
+2023.12.04 23:02:45 INFO  Setting up current java home C:\Users\susta\Java\jdk-19.0.2 in C:\Users\susta\.bloop\bloop.json
+Dec 04, 2023 11:02:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\build.sbt
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\build.sbt
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:747)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2218)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\build.sbt
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:469)
+	at scala.meta.internal.metals.debug.DebugProvider.runCommandDiscovery(DebugProvider.scala:419)
+	at scala.meta.internal.metals.MetalsLspService.discoverMainClasses(MetalsLspService.scala:1730)
+	at scala.meta.internal.metals.WorkspaceLspService.executeCommand(WorkspaceLspService.scala:690)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+2023.12.04 23:02:52 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\bsp.trace.json or C:\Users\susta\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.12.04 23:02:55 INFO  Attempting to connect to the build server...
+2023.12.04 23:02:55 INFO  Bloop uses C:\Users\susta\Java\jdk-19.0.2 defined at C:\Users\susta\.bloop\bloop.json
+2023.12.04 23:02:55 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\project\.metals\bsp.trace.json or C:\Users\susta\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.12.04 23:02:57 INFO  time: Connected to build server in 11s
+2023.12.04 23:02:57 INFO  Connected to Build server: Bloop v1.5.11
+2023.12.04 23:02:57 INFO  time: Imported build in 0.26s
+2023.12.04 23:03:04 INFO  time: indexed workspace in 6.48s
+2023.12.04 23:03:04 INFO  compiling scala (1 scala source)
+2023.12.04 23:03:11 INFO  time: code lens generation in 6.29s
+2023.12.04 23:03:22 INFO  compiling scala-test (1 scala source)
+2023.12.04 23:03:22 INFO  time: compiled scala in 17s
+2023.12.04 23:03:23 INFO  time: compiled scala-test in 1.37s
+Dec 04, 2023 11:03:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.DebugProvider$NoRunOptionException$: There is nothing to run or test in the current file.
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.DebugProvider$NoRunOptionException$: There is nothing to run or test in the current file.
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:747)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2218)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: scala.meta.internal.metals.debug.DebugProvider$NoRunOptionException$: There is nothing to run or test in the current file.
+	at scala.meta.internal.metals.debug.DebugProvider$NoRunOptionException$.<clinit>(DebugProvider.scala:929)
+	at scala.meta.internal.metals.debug.DebugProvider.$anonfun$resolveInFile$2(DebugProvider.scala:370)
+	at scala.Option.fold(Option.scala:263)
+	at scala.meta.internal.metals.debug.DebugProvider.resolveInFile(DebugProvider.scala:341)
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:475)
+	at scala.meta.internal.metals.debug.DebugProvider.runCommandDiscovery(DebugProvider.scala:419)
+	at scala.meta.internal.metals.MetalsLspService.discoverMainClasses(MetalsLspService.scala:1730)
+	at scala.meta.internal.metals.WorkspaceLspService.executeCommand(WorkspaceLspService.scala:690)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+Dec 04, 2023 11:04:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.DebugProvider$NoRunOptionException$: There is nothing to run or test in the current file.
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.DebugProvider$NoRunOptionException$: There is nothing to run or test in the current file.
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:747)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2218)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: scala.meta.internal.metals.debug.DebugProvider$NoRunOptionException$: There is nothing to run or test in the current file.
+	at scala.meta.internal.metals.debug.DebugProvider$NoRunOptionException$.<clinit>(DebugProvider.scala:929)
+	at scala.meta.internal.metals.debug.DebugProvider.$anonfun$resolveInFile$2(DebugProvider.scala:370)
+	at scala.Option.fold(Option.scala:263)
+	at scala.meta.internal.metals.debug.DebugProvider.resolveInFile(DebugProvider.scala:341)
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:475)
+	at scala.meta.internal.metals.debug.DebugProvider.runCommandDiscovery(DebugProvider.scala:419)
+	at scala.meta.internal.metals.MetalsLspService.discoverMainClasses(MetalsLspService.scala:1730)
+	at scala.meta.internal.metals.WorkspaceLspService.executeCommand(WorkspaceLspService.scala:690)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+Dec 04, 2023 11:04:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.DebugProvider$NoRunOptionException$: There is nothing to run or test in the current file.
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.DebugProvider$NoRunOptionException$: There is nothing to run or test in the current file.
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:747)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2218)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: scala.meta.internal.metals.debug.DebugProvider$NoRunOptionException$: There is nothing to run or test in the current file.
+	at scala.meta.internal.metals.debug.DebugProvider$NoRunOptionException$.<clinit>(DebugProvider.scala:929)
+	at scala.meta.internal.metals.debug.DebugProvider.$anonfun$resolveInFile$2(DebugProvider.scala:370)
+	at scala.Option.fold(Option.scala:263)
+	at scala.meta.internal.metals.debug.DebugProvider.resolveInFile(DebugProvider.scala:341)
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:475)
+	at scala.meta.internal.metals.debug.DebugProvider.runCommandDiscovery(DebugProvider.scala:419)
+	at scala.meta.internal.metals.MetalsLspService.discoverMainClasses(MetalsLspService.scala:1730)
+	at scala.meta.internal.metals.WorkspaceLspService.executeCommand(WorkspaceLspService.scala:690)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+Dec 04, 2023 11:04:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 46
+Dec 04, 2023 11:04:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.DebugProvider$NoRunOptionException$: There is nothing to run or test in the current file.
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.DebugProvider$NoRunOptionException$: There is nothing to run or test in the current file.
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:747)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2218)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: scala.meta.internal.metals.debug.DebugProvider$NoRunOptionException$: There is nothing to run or test in the current file.
+	at scala.meta.internal.metals.debug.DebugProvider$NoRunOptionException$.<clinit>(DebugProvider.scala:929)
+	at scala.meta.internal.metals.debug.DebugProvider.$anonfun$resolveInFile$2(DebugProvider.scala:370)
+	at scala.Option.fold(Option.scala:263)
+	at scala.meta.internal.metals.debug.DebugProvider.resolveInFile(DebugProvider.scala:341)
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:475)
+	at scala.meta.internal.metals.debug.DebugProvider.runCommandDiscovery(DebugProvider.scala:419)
+	at scala.meta.internal.metals.MetalsLspService.discoverMainClasses(MetalsLspService.scala:1730)
+	at scala.meta.internal.metals.WorkspaceLspService.executeCommand(WorkspaceLspService.scala:690)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+2023.12.04 23:05:25 INFO  time: code lens generation in 1.26s
+2023.12.04 23:05:27 INFO  running 'C:\Users\susta\Java\jdk-19.0.2\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\susta\AppData\Local\Temp\metals1679485110387253444\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2023.12.04 23:05:28 INFO  [info] welcome to sbt 1.9.6 (Oracle Corporation Java 19.0.2)
+2023.12.04 23:05:28 INFO  [info] loading settings for project scala-build-build from metals.sbt ...
+2023.12.04 23:05:29 INFO  [info] loading project definition from C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\project\project
+2023.12.04 23:05:29 INFO  [info] loading settings for project scala-build from metals.sbt ...
+2023.12.04 23:05:29 INFO  [info] loading project definition from C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\project
+2023.12.04 23:05:32 INFO  [success] Generated .bloop\scala-build.json
+2023.12.04 23:05:32 INFO  [success] Total time: 2 s, completed Dec 4, 2023, 11:05:33 PM
+2023.12.04 23:05:35 ERROR C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\build.sbt:172: error: not found: value sonatypeProfileName
+2023.12.04 23:05:35 ERROR   sonatypeProfileName := "org.scalafx",
+2023.12.04 23:05:35 ERROR   ^
+2023.12.04 23:05:35 ERROR C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\build.sbt:175: error: not found: value sonatypePublishToBundle
+2023.12.04 23:05:35 ERROR   publishTo         := sonatypePublishToBundle.value,
+2023.12.04 23:05:35 ERROR                        ^
+2023.12.04 23:05:35 ERROR sbt.compiler.EvalException: Type error in expression
+2023.12.04 23:05:35 INFO  [error] sbt.compiler.EvalException: Type error in expression
+2023.12.04 23:05:35 INFO  [error] Use 'last' for the full log.
+2023.12.04 23:05:35 INFO  [warn] Project loading failed: (r)etry, (q)uit, (l)ast, or (i)gnore? (default: r)
+2023.12.04 23:05:35 INFO  time: ran 'sbt bloopInstall' in 8.61s
+2023.12.04 23:05:35 ERROR sbt command failed: C:\Users\susta\Java\jdk-19.0.2\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\susta\AppData\Local\Temp\metals1679485110387253444\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall
+2023.12.04 23:05:35 INFO  Disconnecting from Bloop session...
+2023.12.04 23:05:35 INFO  Shut down connection with build server.
+2023.12.04 23:05:35 INFO  Shut down connection with build server.
+2023.12.04 23:05:35 INFO  Attempting to connect to the build server...
+2023.12.04 23:05:35 INFO  Bloop uses C:\Users\susta\Java\jdk-19.0.2 defined at C:\Users\susta\.bloop\bloop.json
+2023.12.04 23:05:36 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\bsp.trace.json or C:\Users\susta\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.12.04 23:05:36 INFO  Attempting to connect to the build server...
+2023.12.04 23:05:36 INFO  Bloop uses C:\Users\susta\Java\jdk-19.0.2 defined at C:\Users\susta\.bloop\bloop.json
+2023.12.04 23:05:36 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\project\.metals\bsp.trace.json or C:\Users\susta\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.12.04 23:05:36 INFO  time: Connected to build server in 0.24s
+2023.12.04 23:05:36 INFO  Connected to Build server: Bloop v1.5.11
+2023.12.04 23:05:36 INFO  time: Imported build in 0.19s
+2023.12.04 23:05:38 INFO  time: indexed workspace in 1.99s
+2023.12.04 23:05:41 INFO  time: code lens generation in 2.17s
+2023.12.04 23:08:43 INFO  skipping build import with status 'Failed'
+2023.12.04 23:08:43 INFO  compiling scala (1 scala source)
+2023.12.04 23:08:45 INFO  time: compiled scala in 1.86s
+2023.12.04 23:10:49 INFO  skipping build import with status 'Failed'
+2023.12.04 23:10:49 INFO  compiling scala-test (1 scala source)
+2023.12.04 23:10:50 INFO  time: compiled scala-test in 1.37s
+2023.12.04 23:10:50 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\dap-server.trace.json or C:\Users\susta\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2023.12.04 23:10:50 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\dap-client.trace.json or C:\Users\susta\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2023.12.04 23:10:50 INFO  Starting debug proxy for [SnakeFx]
+2023.12.04 23:10:51 INFO  Loaded expression compiler in 669 milliseconds
+2023.12.04 23:10:53 INFO  Loaded all sources and classes in 2 seconds
+2023.12.04 23:10:53 INFO  Trying to attach to remote debuggee VM 127.0.0.1:50872 .
+2023.12.04 23:10:53 INFO  Attaching to debuggee VM succeeded.
+2023.12.04 23:10:53 ERROR Build server error: Dec 04, 2023 11:10:54 PM com.sun.javafx.application.PlatformImpl startup
+2023.12.04 23:10:53 ERROR Build server error: WARNING: Unsupported JavaFX configuration: classes were loaded from 'unnamed module @5058d123'
+2023.12.04 23:11:38 INFO  skipping build import with status 'Failed'
+2023.12.04 23:11:38 INFO  compiling scala (1 scala source)
+2023.12.04 23:11:39 INFO  time: compiled scala in 1.08s
+2023.12.04 23:11:40 INFO  skipping build import with status 'Failed'
+2023.12.04 23:11:40 INFO  compiling scala (1 scala source)
+2023.12.04 23:11:41 INFO  time: compiled scala in 1s
+2023.12.04 23:11:44 INFO  Canceling debug proxy for [SnakeFx]
+2023.12.04 23:11:44 INFO  Closing debug server tcp://0.0.0.0:50866
+2023.12.04 23:12:44 INFO  skipping build import with status 'Failed'
+2023.12.04 23:12:44 INFO  compiling scala (1 scala source)
+2023.12.04 23:12:44 INFO  time: compiled scala in 0.98s
+2023.12.04 23:12:56 INFO  skipping build import with status 'Failed'
+2023.12.04 23:12:56 INFO  compiling scala (1 scala source)
+2023.12.04 23:12:56 INFO  time: compiled scala in 0.93s
+2023.12.05 00:30:16 INFO  Bloop uses C:\Users\susta\Java\jdk-19.0.2 defined at C:\Users\susta\.bloop\bloop.json
+2023.12.05 00:30:16 INFO  Bloop uses C:\Users\susta\Java\jdk-19.0.2 defined at C:\Users\susta\.bloop\bloop.json
+2023.12.05 00:30:16 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\bsp.trace.json or C:\Users\susta\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.12.05 00:30:16 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\bsp.trace.json or C:\Users\susta\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.12.05 00:30:16 INFO  Bloop uses C:\Users\susta\Java\jdk-19.0.2 defined at C:\Users\susta\.bloop\bloop.json
+2023.12.05 00:30:16 INFO  Bloop uses C:\Users\susta\Java\jdk-19.0.2 defined at C:\Users\susta\.bloop\bloop.json
+2023.12.05 00:30:16 INFO  Connected to Build server: Bloop v1.5.11
+2023.12.05 00:30:16 INFO  Connected to Build server: Bloop v1.5.11
+2023.12.05 00:30:16 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\project\.metals\bsp.trace.json or C:\Users\susta\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.12.05 00:30:16 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\project\.metals\bsp.trace.json or C:\Users\susta\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.12.05 00:30:16 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\snakeGame.scala
+2023.12.05 00:30:16 INFO  time: Imported build in 0.4s
+2023.12.05 00:30:16 INFO  time: Imported build in 0.4s
+2023.12.05 00:30:18 INFO  no build target found for C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\snakeGame.scala. Using presentation compiler with project's scala-library version: 2.13.8
+2023.12.05 00:30:19 INFO  time: indexed workspace in 3.37s
+2023.12.05 00:30:19 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\snakeGame.scala
+2023.12.05 00:30:19 INFO  time: indexed workspace in 3.4s
+2023.12.05 00:30:20 WARN  no build target for: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\snakeGame.scala
+error: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.tmp\.metals\.tmp\Main3388360170883478182.scala is not a file
+error: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\.metals\.tmp\.metals\.tmp\Main-2105709910790268646.scala is not a file
+Dec 05, 2023 12:30:22 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\snakeGame.scala
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\snakeGame.scala
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:747)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2218)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\snakeGame.scala
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:469)
+	at scala.meta.internal.metals.debug.DebugProvider.runCommandDiscovery(DebugProvider.scala:419)
+	at scala.meta.internal.metals.MetalsLspService.discoverMainClasses(MetalsLspService.scala:1730)
+	at scala.meta.internal.metals.WorkspaceLspService.executeCommand(WorkspaceLspService.scala:690)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+Dec 05, 2023 12:30:28 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\snakeGame.scala
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\snakeGame.scala
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:747)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2218)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: C:\Users\susta\OneDrive\Desktop\CS\Organization of Programming Languages\scala\snakeGame.scala
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:469)
+	at scala.meta.internal.metals.debug.DebugProvider.runCommandDiscovery(DebugProvider.scala:419)
+	at scala.meta.internal.metals.MetalsLspService.discoverMainClasses(MetalsLspService.scala:1730)
+	at scala.meta.internal.metals.WorkspaceLspService.executeCommand(WorkspaceLspService.scala:690)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+2023.12.05 00:30:32 INFO  Shutting down server
+2023.12.05 00:30:32 INFO  shutting down Metals
+2023.12.05 00:30:32 INFO  Shut down connection with build server.
+2023.12.05 00:30:32 INFO  Shut down connection with build server.
+2023.12.05 00:30:32 INFO  Exiting server
